@@ -1,16 +1,20 @@
-set nocompatible
+set nocompatible " be ImProved
 filetype off " Required
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-dispatch'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
+Plugin 'gmarik/vundle'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-dispatch'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end() " Required by vundle
+filetype plugin indent on " Required by vundle
+
 let g:rspec_command = "Dispatch rspec {spec}"
 
 runtime macros/matchit.vim
