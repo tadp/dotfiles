@@ -14,6 +14,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'mhinz/vim-grepper'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'sbdchd/neoformat'
 
 call vundle#end() " Required by vundle
 filetype plugin indent on " Required by vundle
@@ -43,6 +44,19 @@ noremap <C-J> <C-W><C-J>
 noremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" neoformat prettier
+let g:neoformat_javascript_prettier = {
+      \ 'exe': 'prettier',
+      \ 'args': ['--stdin', '--single-quote'],
+      \ 'stdin': 1,
+      \ }
+
+" Auto-format and lint when saving
+augroup fmt
+  autocmd!
+  autocmd BufWritePre *.js Neoformat prettier
+augroup END
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

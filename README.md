@@ -12,6 +12,7 @@ repo.
     Prerequisites on a fresh machine:
     https://github.com/robbyrussell/oh-my-zsh
     https://github.com/thoughtbot/laptop
+    https://github.com/prettier/prettier
 
     Install:
     homesick clone tadp/dotfiles
