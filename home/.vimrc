@@ -11,6 +11,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-rails'
+Plugin 'mhinz/vim-grepper'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 
