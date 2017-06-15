@@ -9,6 +9,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 
